@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Giki FrontEnd Task by Milinda
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This task was made using React, Typescript, TailwindCSS and testing framework of React-Testing-Libray/Jest.
+Figma was used for graphic work with asset provided and also Lighthouse for SEO and Performance.
+
+Giki Asset Figma - https://www.figma.com/file/Qxtja8n6dSk8fl87nnYqP6/Figma-basics?type=design&node-id=501%3A26&mode=design&t=OpfnYCAHQGJ7ylJ5-1
 
 ## Available Scripts
 
@@ -44,5 +47,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-Giki Asset Figma - https://www.figma.com/file/Qxtja8n6dSk8fl87nnYqP6/Figma-basics?type=design&node-id=501%3A26&mode=design&t=OpfnYCAHQGJ7ylJ5-1
