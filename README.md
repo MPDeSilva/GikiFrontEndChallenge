@@ -1,7 +1,9 @@
 # Giki FrontEnd Task by Milinda
 
+Deployed Link - https://giki-front-end-challenge.vercel.app/
+
 This task was made using React, Typescript, TailwindCSS and testing framework of React-Testing-Libray/Jest.
-Figma was used for graphic work with asset provided and also Lighthouse for SEO and Performance.
+Figma was used for graphic work with asset provided and also Lighthouse for SEO and Performance. Deployed via Vercel
 
 Giki Asset Figma - https://www.figma.com/file/Qxtja8n6dSk8fl87nnYqP6/Figma-basics?type=design&node-id=501%3A26&mode=design&t=OpfnYCAHQGJ7ylJ5-1
 
