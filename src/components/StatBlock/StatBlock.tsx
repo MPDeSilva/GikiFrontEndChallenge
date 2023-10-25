@@ -1,11 +1,12 @@
 import clsx from "clsx";
 import React from "react";
+import AnimatedNumbers from "react-animated-numbers";
 
 interface StatBlockProps {
   className?: string;
   size?: "small" | "large";
   heading: string;
-  amount: number | string;
+  amount: number;
   unit: string;
   subHeading: string;
 }
@@ -38,14 +39,20 @@ const StatBlock: React.FC<StatBlockProps> = ({
       </p>
       <p
         className={clsx(
-          "text-[#5f2b68]",
+          "flex flex-row items-end text-[#5f2b68]",
           size === "large" && "md:text-7xl text-4xl",
           size === "small" && "md:text-5xl text-3xl",
           "font-bold"
         )}
       >
-        {amount}
-
+        <AnimatedNumbers
+          data-testid="animated-number"
+          animateToNumber={amount}
+          includeComma={true}
+          configs={(number, index) => {
+            return { mass: 1, tension: 230 * (index + 1), friction: 140 };
+          }}
+        ></AnimatedNumbers>
         <span
           className={clsx(
             size === "large" && "md:text-3xl text-base ml-1",

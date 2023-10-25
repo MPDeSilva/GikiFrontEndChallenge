@@ -1,20 +1,36 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import StatBlock from "./StatBlock";
 
-test("StatBlock component renders correctly", () => {
-  render(
-    <StatBlock
-      heading="Your footprint"
-      amount="7,565"
-      unit="kg"
-      subHeading="of carbon emissions"
-    />
-  );
-  const headingElement = screen.getByText("Your footprint");
-  const amountElement = screen.getByText("7,565");
-  const subHeadingElement = screen.getByText("of carbon emissions");
-  expect(headingElement).toBeInTheDocument();
-  expect(amountElement).toBeInTheDocument();
-  expect(subHeadingElement).toBeInTheDocument();
+describe("StatBlock", () => {
+  it("renders correctly with large size", async () => {
+    render(
+      <StatBlock
+        heading="Test Stat"
+        amount={0}
+        unit="kg"
+        subHeading="Test subheading"
+        size="large"
+      />
+    );
+
+    expect(screen.getByText("Test Stat")).toBeInTheDocument();
+    expect(screen.getByText("kg")).toBeInTheDocument();
+  });
+
+  it("renders correctly with small size", async () => {
+    render(
+      <StatBlock
+        heading="Test Stat"
+        amount={0}
+        unit="kg"
+        subHeading="Test subheading"
+        size="small"
+      />
+    );
+
+    expect(screen.getByText("Test Stat")).toBeInTheDocument();
+    expect(screen.getByText("kg")).toBeInTheDocument();
+  });
 });

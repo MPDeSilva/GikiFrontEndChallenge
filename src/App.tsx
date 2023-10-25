@@ -71,11 +71,16 @@ function App() {
               <StatBlock
                 size="large"
                 heading={"Your footprint"}
-                amount={"7,565"}
+                amount={7565}
                 unit={"kg"}
                 subHeading={"of carbon emissions"}
               />
-              <Button label="Take a step" />
+              <Button
+                label="Take a step"
+                onClick={() => {
+                  window.location.href = "https://giki.earth/";
+                }}
+              />
             </div>
           </div>
         </div>
@@ -83,14 +88,14 @@ function App() {
           <StatBlock
             size="small"
             heading={"End of year target"}
-            amount={"5,855"}
+            amount={5855}
             unit={"kg"}
             subHeading={"of carbon emissions"}
           />
           <StatBlock
             size="small"
             heading={"Left to cut this year"}
-            amount={"409"}
+            amount={409}
             unit={"kg"}
             subHeading={"of carbon emissions"}
           />
