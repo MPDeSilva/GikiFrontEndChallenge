@@ -3,10 +3,15 @@ import React from "react";
 
 interface BadgeProps {
   className?: string;
-  text: string;
+  targetYear: number;
+  targetAmount: number;
 }
 
-const Badge: React.FC<BadgeProps> = ({ className, text }) => {
+const TargetBadge: React.FC<BadgeProps> = ({
+  className,
+  targetYear,
+  targetAmount,
+}) => {
   return (
     <div
       className={clsx(
@@ -14,9 +19,9 @@ const Badge: React.FC<BadgeProps> = ({ className, text }) => {
         className
       )}
     >
-      {text}
+      Your {targetYear} target is {targetAmount.toLocaleString()} kg
     </div>
   );
 };
 
-export default Badge;
+export default TargetBadge;

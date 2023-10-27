@@ -2,9 +2,10 @@ import React from "react";
 import "./App.css";
 import Button from "./components/Button/Button";
 import StatBlock from "./components/StatBlock/StatBlock";
-import Badge from "./components/Badge/Badge";
+import Badge from "./components/TargetBadge/TargetBadge";
 import NavBar from "./components/NavBar/NavBar";
 import Container from "./components/Container/Container";
+import TargetBadge from "./components/TargetBadge/TargetBadge";
 
 function App() {
   return (
@@ -100,7 +101,7 @@ function App() {
             subHeading={"of carbon emissions"}
           />
         </div>
-        <Badge text={"Your 2030 target is 2,500 kg"} />
+        <TargetBadge targetYear={2030} targetAmount={2500} />
       </div>
     </Container>
   );
